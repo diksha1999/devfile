@@ -10,6 +10,11 @@ components:
   - alias: theia-editor
     type: cheEditor
     id: org.eclipse.che.editor.theia:latest
+    endpoints: 
+      - name: secure
+        targetPort: 8080
+        attributes: 
+          urlRewriteSupported: 'true'
 commands:
   - name: start
     actions:
